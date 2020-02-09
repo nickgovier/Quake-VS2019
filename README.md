@@ -6,4 +6,9 @@ Change the working directory in Visual Studio 2019 to point to your Quake direct
 
 In quakedef.h, define GLQUAKE to build the OpenGL version, otherwise don't for software/Winquake.
 
-Start the game with -no8bit if the textures don't work in GLQuake, e.g. -width 800 -height 600 -bpp 32 -window -no8bit
+Winquake/software
+- Start the game with -startwindowed
+
+GLQuake:
+- Start the game with -no8bit if the textures don't work, e.g. -width 800 -height 600 -bpp 32 -window -no8bit
+- r_flashblend 0 to turn off the silly yellow circles when people shoot
