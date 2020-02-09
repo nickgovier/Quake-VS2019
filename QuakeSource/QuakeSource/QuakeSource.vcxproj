@@ -34,6 +34,10 @@
     <ClInclude Include="..\draw.h" />
     <ClInclude Include="..\d_iface.h" />
     <ClInclude Include="..\d_local.h" />
+    <ClInclude Include="..\glquake.h" />
+    <ClInclude Include="..\glquake2.h" />
+    <ClInclude Include="..\gl_model.h" />
+    <ClInclude Include="..\gl_warp_sin.h" />
     <ClInclude Include="..\input.h" />
     <ClInclude Include="..\keys.h" />
     <ClInclude Include="..\mathlib.h" />
@@ -105,6 +109,18 @@
     <ClCompile Include="..\d_surf.c" />
     <ClCompile Include="..\d_vars.c" />
     <ClCompile Include="..\d_zpoint.c" />
+    <ClCompile Include="..\gl_draw.c" />
+    <ClCompile Include="..\gl_mesh.c" />
+    <ClCompile Include="..\gl_model.c" />
+    <ClCompile Include="..\gl_refrag.c" />
+    <ClCompile Include="..\gl_rlight.c" />
+    <ClCompile Include="..\gl_rmain.c" />
+    <ClCompile Include="..\gl_rmisc.c" />
+    <ClCompile Include="..\gl_rsurf.c" />
+    <ClCompile Include="..\gl_screen.c" />
+    <ClCompile Include="..\gl_test.c" />
+    <ClCompile Include="..\gl_vidnt.c" />
+    <ClCompile Include="..\gl_warp.c" />
     <ClCompile Include="..\host.c" />
     <ClCompile Include="..\host_cmd.c" />
     <ClCompile Include="..\in_win.c" />
@@ -237,7 +253,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Winmm.lib;DXGUID.LIB;wsock32.lib;mgllt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Winmm.lib;DXGUID.LIB;wsock32.lib;mgllt.lib;opengl32.lib;Comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>libc.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>

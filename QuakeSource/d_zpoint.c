@@ -20,6 +20,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // d_zpoint.c: software driver module for drawing z-buffered points
 
 #include "quakedef.h"
+
+#ifndef GLQUAKE
+
 #include "d_local.h"
 
 
@@ -45,3 +48,4 @@ void D_DrawZPoint (void)
 	}
 }
 
+#endif

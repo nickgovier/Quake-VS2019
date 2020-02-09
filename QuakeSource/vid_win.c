@@ -20,6 +20,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // vid_win.c -- Win32 video driver
 
 #include "quakedef.h"
+
+#ifndef GLQUAKE
+
 #include "winquake.h"
 #include "d_local.h"
 #include "resource.h"
@@ -3340,3 +3343,5 @@ void VID_MenuKey (int key)
 		break;
 	}
 }
+
+#endif

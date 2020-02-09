@@ -23,6 +23,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include "quakedef.h"
 
+#ifndef GLQUAKE
+
 typedef struct {
 	vrect_t	rect;
 	int		width;
@@ -900,3 +902,4 @@ void Draw_EndDisc (void)
 	D_EndDirectRect (vid.width - 24, 0, 24, 24);
 }
 
+#endif

@@ -20,6 +20,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // r_edge.c
 
 #include "quakedef.h"
+
+#ifndef GLQUAKE
+
 #include "r_local.h"
 
 #if 0
@@ -772,3 +775,4 @@ void R_ScanEdges (void)
 }
 
 
+#endif

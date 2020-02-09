@@ -20,6 +20,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // r_surf.c: surface-related refresh code
 
 #include "quakedef.h"
+
+#ifndef GLQUAKE
+
 #include "r_local.h"
 
 drawsurf_t	r_drawsurf;
@@ -676,3 +679,4 @@ void R_GenTile (msurface_t *psurf, void *pdest)
 	}
 }
 
+#endif

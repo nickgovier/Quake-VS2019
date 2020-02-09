@@ -20,6 +20,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // r_misc.c
 
 #include "quakedef.h"
+
+#ifndef GLQUAKE
+
 #include "r_local.h"
 
 
@@ -521,3 +524,4 @@ r_refdef.viewangles[2]=    0;
 	D_SetupFrame ();
 }
 
+#endif

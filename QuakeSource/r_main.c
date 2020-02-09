@@ -20,6 +20,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // r_main.c
 
 #include "quakedef.h"
+
+#ifndef GLQUAKE
+
 #include "r_local.h"
 
 //define	PASSAGES
@@ -1083,3 +1086,4 @@ void R_InitTurb (void)
 	}
 }
 
+#endif

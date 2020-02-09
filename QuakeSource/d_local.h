@@ -19,6 +19,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 */
 // d_local.h:  private rasterization driver defs
 
+#ifndef GLQUAKE
+
 #include "r_shared.h"
 
 //
@@ -109,3 +111,4 @@ extern float	d_scalemip[3];
 
 extern void (*d_drawspans) (espan_t *pspan);
 
+#endif

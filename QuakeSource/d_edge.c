@@ -20,6 +20,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // d_edge.c
 
 #include "quakedef.h"
+
+#ifndef GLQUAKE
+
 #include "d_local.h"
 
 static int	miplevel;
@@ -329,3 +332,4 @@ void D_DrawSurfaces (void)
 	}
 }
 
+#endif
